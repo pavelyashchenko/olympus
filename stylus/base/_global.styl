@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,700&display=swap');
+
+$font = "Poppins", sans-serif
+
+@import "../includes/header/index.styl"
+@import "../includes/footer/index.styl"
+@import "../includes/modules/button/index.styl"
+
+html,
+body
+  position relative
+  height 100%
+
+html
+  box-sizing border-box
+  scroll-behavior smooth
+
+*,
+*::before,
+*::after
+  box-sizing inherit
+  padding 0
+  margin 0
+
+body
+  display flex
+  flex-direction column
+  font-family $font
+  font-weight 400
+  background-color white
+  overflow-x hidden
+
+main
+  flex 1 0 auto
+
+a
+  display inline-block
+  text-decoration none
+  outline none
+
+  &:focus-visible
+    outline solid
+
+p,
+span,
+ul,
+ol,
+li,
+input,
+textarea
+  font-family $font
+
+ul,
+li,
+ol
+  list-style none
+  padding 0
+  margin 0
+
+h1,
+h2,
+h3,
+h4
+  font-family $font
+  font-weight 500
+  margin 0
+  padding 0
+
+h1
+  font-size 50px
+  line-height 60px
+  font-weight 700
+
+h2
+  font-size 40px
+  line-height 48px
+
+h3
+  font-size 20px
+
+h4
+  font-size 16px
+
+button
+  border none
+  outline none
+  cursor pointer
+  background-color transparent
+  color white
+  transition all 0.1s
+
+  &:focus-visible
+    outline solid
+
+.main
+  overflow hidden
+
+.page-section__inner
+  max-width 1340px
+  padding 0 20px
+  margin 0 auto

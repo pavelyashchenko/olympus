@@ -1,0 +1,58 @@
+extends ../includes/page
+
+block head
+  -
+    title = "Impressario | Take Olympus"
+
+block styles
+  link(rel="stylesheet" href="css/libs.min.css")
+  link(rel="stylesheet" href="css/index.min.css")
+
+block scripts 
+  script(src="scripts/libs.min.js")
+  script(src="scripts/index.js")
+
+block main
+  .page-section.page-section--main
+    .page-section__inner
+      .page-section__row
+        .cta
+          .cta__picture.wow.fadeInLeft(data-wow-delay=".3s")
+            img(src="img/pictures/no-dep.webp" alt="40 Free Spins")
+          .cta__button.wow.fadeInLeft(data-wow-delay=".5s")
+            +button(href="#") Get bonus!
+
+        .characters
+          img(src="img/pictures/impressario.webp" alt="Impressario").characters--impressario.wow.fadeInLeft(data-wow-delay=".5s")
+          img(src="img/pictures/zeus.webp" alt="Zeus").characters--zeus.wow.fadeInRight(data-wow-delay=".7s")
+
+        .game__name
+          img(src="img/pictures/take-olympus.webp" alt="Take Olympus").wow.fadeInUp(data-wow-delay=".9s")
+
+        .game__name-decoration
+          img(src="img/icons/take-olympus-shadow.svg" alt="Decoration")
+
+        .cloud-top
+          img(src="img/pictures/cloud-top.webp" alt="Cloud")
+
+      .thunder-bolds
+        img(src="img/pictures/thunder-bolds.webp" alt="Thunder Bolds")
+
+      .cloud-bottom
+        img(src="img/pictures/cloud-bottom.webp" alt="Cloud")
+
+      .decoration-arrow
+        img(src="img/icons/down-arrow.svg" alt="Arrow").wow.fadeInDown(data-wow-delay="1.2s")
+
+      .terms-conditions
+        h3.terms-conditions__title.wow.fadeInLeft(data-wow-delay=".1s") Bonus Terms & Conditions
+
+        ul.terms-conditions__list
+          li.terms-conditions__item.wow.fadeInLeft(data-wow-delay=".2s") This is a joint promotion between Impressario Casino and Free Spins Aktuell. No code required.
+          li.terms-conditions__item.wow.fadeInLeft(data-wow-delay=".3s") 15 No Deposit Free Spins are given on Bgaming’s “Snoop Dogg Dollars”.
+          li.terms-conditions__item.wow.fadeInLeft(data-wow-delay=".4s") Wager 40x.
+          li.terms-conditions__item.wow.fadeInLeft(data-wow-delay=".5s") Maximum withdrawable amount from the promotion: EUR 50, AUD 75, NZD 75.
+          li.terms-conditions__item.wow.fadeInLeft(data-wow-delay=".6s") To request a withdrawal of winnings earned from the No Deposit Free Spins bonus, players must first make a deposit.
+
+        .terms-conditions__button.wow.fadeInUp(data-wow-delay=".7s")
+          +button(href="#") Get bonus!

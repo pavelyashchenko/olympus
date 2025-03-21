@@ -1,0 +1,26 @@
+.button
+  display inline-block
+  font-size 18px
+  line-height 1.6
+  font-weight 700
+  padding 13px
+  width 220px
+  background linear-gradient(138deg, #fe2a9d 0%, #ff5515 100%)
+  border-radius 10px
+  color #fff
+  text-align center
+  transition all 0.3s ease
+  text-transform uppercase
+
+  &:hover,
+  &:focus-visible
+    background linear-gradient(138deg, #f548bb 0%, #ff7334 100%)
+    outline none
+
+  &:active
+    background linear-gradient(138deg, #ea1689 0%, #eb4101 100%)
+
+  &:disabled
+  &[disabled]
+    background linear-gradient(138deg, #676767 0%, #595959 100%)
+    color #837073
